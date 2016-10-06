@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+      height: 100%;
+      color: white;
+      font-family: 'Baloo Bhai', cursive;
+}
+
+.top {
+    height: 100vh;
+    background: url('https://hd.unsplash.com/photo-1452421822248-d4c2b47f0c81');
+    background-size: cover;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.middle {
+    height: 100vh;
+    background: linear-gradient(45deg,#8a5fd2,#f4569d);
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
