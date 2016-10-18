@@ -1,0 +1,86 @@
+*, *:after, *:before
+    margin: 0
+    padding: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius
+    
+
+@import susy
+
+$susy:(columns: 12, gutter: .25, gutter-position: split, container: 1200px, math: fluid, outplut: float, debug: (image: hide, color: rgba(255,0,0,.5), output: background))
+
+
+$font: 'Poppins', sans-serif
+
+
+
+body
+    font-family: $font
+    line-height: 1.3
+
+.description
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    
+.grid
+    margin: 0 auto
+    @include container()
+    &_content
+        @include span(6)
+        h1
+            font-size: 3rem
+            color: #333
+            padding: 25% 0 8%
+            font-weight: 400
+        &_button
+            +border-radius(30px)
+            display: block
+            float: left
+            font-size: 1rem
+            font-weight: 600
+            text-decoration: none
+            color: #fff
+            background-color: #267df4
+            padding: 10px 30px
+            margin-right: 20px
+            &:hover
+                background-color: lighten(#267df4, 5%)
+        &_notes
+            font-size: .7rem
+            color: #444
+            a
+                color: #267df4
+                &:hover
+                    color: lighten(#267df4, 5%)             
+        ul
+            margin-bottom: 8%
+            li
+                list-style: none
+                font-size: 1.3rem
+                font-weight: 300
+                color: #343
+                margin-bottom: 1em
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 24px
+                    height: 24px
+                    background-image: url('bullet.svg')
+                    margin-right: 10px
+                    margin-bottom: -4px
+    &_image
+        @include span(6)
+        @include last()
+        
+                    
+                    
+        
+
+    
