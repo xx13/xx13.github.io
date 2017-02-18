@@ -8,17 +8,13 @@
 
 /* Mixins */
 /* Variables */
-/* Font style */
+/* Body */
 body {
-  font-family: din-2014, sans-serif;
-  font-size: 22px;
-  line-height: 30px;
-  color: #1a1919;
-  font-weight: 400;
   background-color: #e1eafb; }
 
 /* Styles */
 .modal_heading, .modal_h1, .modal_h2 {
+  font-family: din-2014, sans-serif;
   line-height: 1.2;
   font-weight: 700;
   margin-top: 140px;
@@ -36,6 +32,7 @@ body {
   font-size: 48px; }
 
 .modal_h3 {
+  font-family: din-2014, sans-serif;
   font-size: 30px;
   line-height: 1.2;
   font-weight: 700;
@@ -46,6 +43,9 @@ body {
       text-align: center; } }
 
 .modal_text_light {
+  font-family: din-2014, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
   color: #b2b6bc; }
 
 .modal_text_strong {
@@ -62,6 +62,9 @@ body {
   display: none; }
 
 .modal_link {
+  font-family: din-2014, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
   color: #6695e7;
   text-decoration: none; }
   .modal_link:hover {
@@ -78,6 +81,9 @@ body {
   height: 96vh;
   z-index: 1001;
   position: relative;
+  font-family: din-2014, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
   top: 2vh;
   left: 1vw;
   background: #fff url("img/image_bg.png") top right no-repeat;
@@ -194,7 +200,10 @@ body {
   text-align: center;
   margin: 30vh auto;
   overflow: hidden;
-  padding-top: 100px; }
+  padding-top: 100px;
+  font-family: din-2014, sans-serif;
+  font-size: 22px;
+  line-height: 30px; }
 
 .modal_welcome_text {
   width: 100%;
