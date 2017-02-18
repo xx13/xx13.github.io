@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Ask 'Em Modals
+        </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="modal_style.css" type="text/css">
+        <!-- Typekit Din font -->
+        <script src="https://use.typekit.net/rmc4aaq.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <!-- Hide and show lightbox. Can be removed with other script -->
+        <script src="modal_script.js"></script>
+        <!-- Include HTML parts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script> 
+            $(function(){
+                $("#include_askem").load("_askem.html");
+                $("#include_faq").load("_faq.html"); 
+                $("#include_guidance").load("_guidance.html"); 
+                $("#include_questions").load("_questions.html"); 
+                $("#include_welcome").load("_welcome.html");
+            });
+        </script>
+    </head>
+<body>
+    <div class="modal_index">
+        <a class="modal_link" href="#" onclick="showModal('askem')">What is Ask 'Em?</a>
+        <a class="modal_link" href="#" onclick="showModal('guidance')">Providing Guidance</a>   
+        <a class="modal_link" href="#" onclick="showModal('questions')">Asking Good Questions</a>   
+        <a class="modal_link" href="#" onclick="showModal('faq')">FAQ</a>       
+        <a class="modal_link" href="#" onclick="showModal('welcome')">Welcome</a>       
+    </div>    
+    <div id="include_askem"></div>
+    <div id="include_guidance"></div>
+    <div id="include_questions"></div>
+    <div id="include_faq"></div>
+    <div id="include_welcome"></div>
+</body>
+</html>

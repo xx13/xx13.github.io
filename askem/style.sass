@@ -1,0 +1,269 @@
+/* Reset */
+
+
+*, *:after, *:before
+    margin: 0
+    padding: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+/* Mixins */
+
+
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius
+
+=box-shadow($top, $left, $blur, $color)
+    -webkit-box-shadow: $top $left $blur $color
+    -moz-box-shadow: $top $left $blur $color
+    box-shadow: $top $left $blur $color
+
+=flex
+    display: -webkit-box  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox  /* TWEENER - IE 10 */
+    display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex  
+
+    
+/* Variables */
+
+
+$font: din-2014, sans-serif
+$dark: #1a1919
+$light: #b2b6bc
+$blue: #6695e7
+$blue_hover: #4577ce
+
+
+/* Font style */
+
+
+body
+    font-family: $font
+    font-size: 22px
+    line-height: 30px
+    color: $dark
+    font-weight: 400
+    background-color: #e1eafb
+  
+    
+/* Styles */   
+
+
+.modal_heading
+    line-height: 1.2
+    font-weight: 700
+    margin-top: 140px
+    margin-bottom: 60px
+    padding-bottom: 60px
+    text-align: center
+    background: transparent url('img/header.svg') center bottom no-repeat
+    background-size: 70px 6px
+    color: $dark
+    
+.modal_h1
+    @extend .modal_heading
+    font-size: 60px
+    
+.modal_h2
+    @extend .modal_heading
+    font-size: 48px
+    
+.modal_h3
+    font-size: 30px
+    line-height: 1.2
+    font-weight: 700
+    margin-bottom: 24px
+    color: $dark
+    @media (max-width: 800px)
+        text-align: center
+    
+.modal_text_light
+    color: $light
+    
+.modal_text_strong
+    font-weight: 700
+    
+.modal_darken
+    width: 100vw
+    height: 100vh
+    z-index: 1000
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(32,33,35,.95)
+    display: none
+    
+.modal_link
+    color: $blue
+    text-decoration: none
+    &:hover
+        color: $blue_hover
+    
+.modal_margin_24
+    margin-bottom: 24px
+    
+.modal_margin_12
+    margin-bottom: 24px
+    
+.modal_window
+    width: 98vw
+    height: 96vh
+    z-index: 1001
+    position: relative
+    top: 2vh
+    left: 1vw
+    background: #fff url('img/image_bg.png') top right no-repeat
+    overflow: auto
+    @media (max-width: 1280px)
+        background: #fff url('img/image_bg_small.png') top right no-repeat
+
+.modal_wrapper
+    max-width: 1100px
+    padding: 0 20px
+    margin: 0 auto
+
+.modal_close
+    width: 36px
+    height: 36px
+    position: fixed
+    top: 36px
+    right: 36px
+    clear: both
+
+.modal_svg_close
+    fill: #1A1919
+    width: 36px
+    height: 36px
+    &:hover
+        fill: $blue_hover
+    
+.modal_text_centered
+    max-width: 860px
+    margin: 0 auto 30px
+    
+.modal_askem_section
+    +flex
+    justify-content: space-around
+    align-items: center
+    &_image
+        text-align: center
+        padding: 24px 40px 24px 40px
+        &_img 
+            +border-radius(4px)
+            +box-shadow(5px, 15px,40px, rgba(21,37,41,.2))
+    &_text
+        padding: 0 24px 0 0
+        p
+            margin-right: 24px
+            margin-bottom: 24px
+            &:last-child
+                margin-bottom: 0
+    @media (max-width: 800px)
+        flex-flow: column
+
+.modal_divider
+    width: 100%
+    height: 180px
+    background: transparent url('img/divider.svg') center center no-repeat
+    background-size: 77px 18px
+
+.modal_go_top
+    width: 90px
+    height: 54px
+    margin: 100px auto
+    padding-top: 30px
+    background: transparent url('img/top.svg') top center no-repeat
+    background-size: 12px 22px
+    
+.modal_go_top_new
+    width: 90px
+    height: 60px
+    margin: 100px auto
+    /*background: transparent url('img/top.svg') top center no-repeat
+    /*background-size: 12px 22px
+
+.modal_svg_top
+    fill: $blue
+    
+.modal_link_top
+    &:hover .modal_svg_top
+        fill: $blue_hover
+    
+ .modal_list_blank
+    list-style: none
+    margin-left: 48px
+    &_item
+        margin-bottom: 24px
+        &:last-child
+            margin-bottom: 48px
+        p
+            margin-bottom: 12px
+            &:last-child
+                margin-bottom: 48px
+
+.modal_list_bullets
+    list-style: none
+    margin-left: 48px
+    &_item
+        margin-bottom: 24px
+        text-indent: -28px
+        &:last-child
+            margin-bottom: 48px
+        &:before
+            content: ""
+            width: 12px
+            height: 12px
+            display: inline-block
+            background-color: $blue
+            border-radius: 6px
+            margin-right: 12px
+
+        
+/* Welcome screen */
+
+    
+.modal_window_welcome
+    max-width: 480px
+    height: 360px
+    background-color: #fff
+    z-index: 1002
+    text-align: center
+    margin: 30vh auto
+    overflow: hidden
+    padding-top: 100px
+
+.modal_welcome_text
+    width: 100%
+    margin-bottom: 40px
+    padding: 0 30px
+    
+.modal_welcome_button
+    background-color: $blue
+    padding: 12px 80px
+    border-radius: 27px
+    color: #fff
+    text-decoration: none
+    &:hover
+        background-color: $blue_hover
+    
+
+/* Preview page */
+
+
+.modal_index
+    width: 100vw
+    height: 100vh
+    text-align: center
+    +flex
+    align-items: center
+    justify-content: center
+    flex-flow: column
+
+
+
+

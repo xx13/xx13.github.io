@@ -1,0 +1,185 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: din-2014, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  color: #1a1919;
+  font-weight: 400;
+  background-color: #e1eafb; }
+
+.modal_heading, .modal_h1, .modal_h2 {
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 140px;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background: transparent url("img/header.svg") center bottom no-repeat;
+  background-size: 70px 6px;
+  color: #1a1919; }
+
+.modal_h1 {
+  font-size: 60px; }
+
+.modal_h2 {
+  font-size: 48px; }
+
+.modal_h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1a1919; }
+  @media (max-width: 800px) {
+    .modal_h3 {
+      text-align: center; } }
+
+.modal_text_light {
+  color: #b2b6bc; }
+
+.modal_text_strong {
+  font-weight: 700; }
+
+.modal_darken {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(32, 33, 35, 0.95);
+  display: none; }
+
+.modal_link {
+  color: #6695e7;
+  text-decoration: none; }
+  .modal_link:hover {
+    color: #4577ce; }
+
+.modal_margin_24 {
+  margin-bottom: 24px; }
+
+.modal_margin_12 {
+  margin-bottom: 24px; }
+
+.modal_window {
+  width: 98vw;
+  height: 96vh;
+  z-index: 1001;
+  position: relative;
+  top: 2vh;
+  left: 1vw;
+  background: #fff url("img/image_bg.png") top right no-repeat;
+  overflow: auto; }
+  @media (max-width: 1280px) {
+    .modal_window {
+      background: #fff url("img/image_bg_small.png") top right no-repeat; } }
+
+.modal_wrapper {
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.modal_close {
+  width: 36px;
+  height: 36px;
+  position: fixed;
+  top: 36px;
+  right: 36px;
+  clear: both; }
+
+.modal_text_centered {
+  max-width: 860px;
+  margin: 0 auto 30px; }
+
+.modal_askem_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .modal_askem_section_image {
+    text-align: center;
+    padding: 24px 40px 24px 40px; }
+    .modal_askem_section_image_img {
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      -webkit-box-shadow: 5px 15px 40px rgba(21, 37, 41, 0.2);
+      -moz-box-shadow: 5px 15px 40px rgba(21, 37, 41, 0.2);
+      box-shadow: 5px 15px 40px rgba(21, 37, 41, 0.2); }
+  .modal_askem_section_text {
+    padding: 0 24px 0 0; }
+    .modal_askem_section_text p {
+      margin-right: 24px;
+      margin-bottom: 24px; }
+      .modal_askem_section_text p:last-child {
+        margin-bottom: 0; }
+  @media (max-width: 800px) {
+    .modal_askem_section {
+      flex-flow: column; } }
+
+.modal_divider {
+  width: 100%;
+  height: 180px;
+  background: transparent url("img/divider.svg") center center no-repeat;
+  background-size: 77px 18px; }
+
+.modal_go_top {
+  width: 90px;
+  height: 54px;
+  margin: 100px auto;
+  padding-top: 30px;
+  background: transparent url("img/top.svg") top center no-repeat;
+  background-size: 12px 22px; }
+
+.modal_list_blank {
+  list-style: none;
+  margin-left: 48px; }
+  .modal_list_blank_item {
+    margin-bottom: 24px; }
+    .modal_list_blank_item:last-child {
+      margin-bottom: 48px; }
+    .modal_list_blank_item p {
+      margin-bottom: 12px; }
+      .modal_list_blank_item p:last-child {
+        margin-bottom: 48px; }
+
+.modal_list_bullets {
+  list-style: none;
+  margin-left: 48px; }
+  .modal_list_bullets_item {
+    margin-bottom: 24px;
+    text-indent: -28px; }
+    .modal_list_bullets_item:last-child {
+      margin-bottom: 48px; }
+    .modal_list_bullets_item:before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      background-color: #6695e7;
+      border-radius: 6px;
+      margin-right: 12px; }
+
+/* Can be removed. Links to display the functions */
+.modal_index {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column; }
+
+/*# sourceMappingURL=style_modals.css.map */
