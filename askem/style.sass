@@ -12,17 +12,17 @@
 /* Mixins */
 
 
-=border-radius($radius)
+=modal_border-radius($radius)
     -webkit-border-radius: $radius
     -moz-border-radius: $radius
     border-radius: $radius
 
-=box-shadow($top, $left, $blur, $color)
+=modal_box-shadow($top, $left, $blur, $color)
     -webkit-box-shadow: $top $left $blur $color
     -moz-box-shadow: $top $left $blur $color
     box-shadow: $top $left $blur $color
 
-=flex
+=modal_flex
     display: -webkit-box  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox  /* TWEENER - IE 10 */
     display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -152,15 +152,15 @@ body
     margin: 0 auto 30px
     
 .modal_askem_section
-    +flex
+    +modal_flex
     justify-content: space-around
     align-items: center
     &_image
         text-align: center
         padding: 24px 40px 24px 40px
         &_img 
-            +border-radius(4px)
-            +box-shadow(5px, 15px,40px, rgba(21,37,41,.2))
+            +modal_border-radius(4px)
+            +modal_box-shadow(5px, 15px,40px, rgba(21,37,41,.2))
     &_text
         padding: 0 24px 0 0
         p
@@ -258,7 +258,7 @@ body
     width: 100vw
     height: 100vh
     text-align: center
-    +flex
+    +modal_flex
     align-items: center
     justify-content: center
     flex-flow: column
