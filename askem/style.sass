@@ -157,7 +157,7 @@ body
     align-items: center
     &_image
         text-align: center
-        padding: 24px 40px 24px 40px
+        padding: 24px 40px 24px 40px    
         &_img 
             +modal_border-radius(4px)
             +modal_box-shadow(5px, 15px,40px, rgba(21,37,41,.2))
@@ -235,6 +235,8 @@ body
     font-family: $font
     font-size: 22px
     line-height: 30px
+    @media (max-width: 650px)
+        margin: 10vh auto
 
 .modal_welcome_text
     width: 100%

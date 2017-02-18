@@ -204,6 +204,9 @@ body {
   font-family: din-2014, sans-serif;
   font-size: 22px;
   line-height: 30px; }
+  @media (max-width: 650px) {
+    .modal_window_welcome {
+      margin: 10vh auto; } }
 
 .modal_welcome_text {
   width: 100%;
