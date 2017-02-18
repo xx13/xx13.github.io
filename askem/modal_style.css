@@ -146,24 +146,15 @@ body {
 
 .modal_go_top {
   width: 90px;
-  height: 54px;
-  margin: 100px auto;
-  padding-top: 30px;
-  background: transparent url("img/top.svg") top center no-repeat;
-  background-size: 12px 22px; }
-
-.modal_go_top_new {
-  width: 90px;
-  height: 60px;
-  margin: 100px auto;
-  /*background: transparent url('img/top.svg') top center no-repeat */
-  /*background-size: 12px 22px */ }
+  margin: 100px auto; }
 
 .modal_svg_top {
   fill: #6695e7; }
 
-.modal_link_top:hover .modal_svg_top {
-  fill: #4577ce; }
+.modal_link_top {
+  text-decoration: none; }
+  .modal_link_top:hover .modal_svg_top {
+    fill: #4577ce; }
 
 .modal_list_blank {
   list-style: none;
