@@ -73,7 +73,7 @@ input {
   text-align: center;
   overflow: hidden;
   padding: 50px 0;
-  background: url("/img/bg.jpg") bottom left no-repeat;
+  background: url("../img/bg.jpg") bottom left no-repeat;
   background-size: cover; }
   .promo a {
     margin: 30px 0 100px; }
@@ -121,21 +121,21 @@ input {
     background-size: 44px 44px;
     background-repeat: no-repeat; }
   .reasons_1 {
-    background-image: url("/img/reasons_icon_1.svg"); }
+    background-image: url("../img/reasons_icon_1.svg"); }
   .reasons_2 {
-    background-image: url("/img/reasons_icon_2.svg"); }
+    background-image: url("../img/reasons_icon_2.svg"); }
   .reasons_3 {
-    background-image: url("/img/reasons_icon_3.svg"); }
+    background-image: url("../img/reasons_icon_3.svg"); }
   .reasons_4 {
-    background-image: url("/img/reasons_icon_4.svg"); }
+    background-image: url("../img/reasons_icon_4.svg"); }
   .reasons_5 {
-    background-image: url("/img/reasons_icon_5.svg"); }
+    background-image: url("../img/reasons_icon_5.svg"); }
   .reasons_6 {
-    background-image: url("/img/reasons_icon_6.svg"); }
+    background-image: url("../img/reasons_icon_6.svg"); }
   .reasons_7 {
-    background-image: url("/img/reasons_icon_7.svg"); }
+    background-image: url("../img/reasons_icon_7.svg"); }
   .reasons_8 {
-    background-image: url("/img/reasons_icon_8.svg"); }
+    background-image: url("../img/reasons_icon_8.svg"); }
 
 .features {
   display: -webkit-box;
@@ -173,16 +173,16 @@ input {
       height: 50%;
       padding-top: 18px; }
   .features_1 {
-    background: #fff url("/img/features_icon_1.svg") center 20% no-repeat;
+    background: #fff url("../img/features_icon_1.svg") center 20% no-repeat;
     background-size: 100px 100px; }
   .features_2 {
-    background: #fff url("/img/features_icon_2.svg") center 20% no-repeat;
+    background: #fff url("../img/features_icon_2.svg") center 20% no-repeat;
     background-size: 100px 100px; }
   .features_3 {
-    background: #fff url("/img/features_icon_3.svg") center 20% no-repeat;
+    background: #fff url("../img/features_icon_3.svg") center 20% no-repeat;
     background-size: 100px 100px; }
   .features_4 {
-    background: #fff url("/img/features_icon_4.svg") center 20% no-repeat;
+    background: #fff url("../img/features_icon_4.svg") center 20% no-repeat;
     background-size: 100px 100px; }
 
 .contact {
