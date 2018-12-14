@@ -167,6 +167,7 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
     background-color: $dark_color
     background-size: cover
     &:hover
+      background-color: $dark_color
       background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('img/#{$item}.png') center center no-repeat
       background-size: cover
 
@@ -269,46 +270,6 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
 .navigation_bottom a
     margin: 0 1rem
 
-// TODO: Can I fix order issues without army of extra classes?
-
-.o1
-  order: 1
-
-.o2
-  order: 2
-
-.o3
-  order: 3
-  @media (max-width: 900px)
-    order: 4
-
-.o4
-  order: 4
-  @media (max-width: 900px)
-    order: 3
-
-.o5
-  order: 5
-
-.o6
-  order: 6
-
-.o7
-  order: 7
-
-.o8
-  order: 8
-  @media (max-width: 900px)
-    order: 9
-
-.o9
-  order: 9
-  @media (max-width: 900px)
-    order: 8
-
-.o10
-  order: 10
-
 
 .center
   text-align: center
@@ -318,6 +279,79 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
 
 .mt2
   margin-top: 2rem
+
+
+$personal: [1, 2, 5, 6, 7, 8, 11]
+@each $item in $personal
+  .pe_#{$item}
+    order: $item
+
+.pe_34
+  order: 3
+  @media (max-width: 900px)
+    order: 4
+
+.pe_43
+  order: 4
+  @media (max-width: 900px)
+    order: 3
+
+.pe_910
+  order: 9
+  @media (max-width: 900px)
+    order: 10
+
+.pe_109
+  order: 10
+  @media (max-width: 900px)
+    order: 9
+
+$model_tests: [3, 4, 5, 6]
+@each $item in $model_tests
+  .m_#{$item}
+    order: $item
+
+.m_12
+  order: 1
+  @media (max-width: 900px)
+    order: 2
+
+.m_21
+  order: 2
+  @media (max-width: 900px)
+    order: 1
+
+$family: [1, 2, 5, 6]
+@each $item in $family
+  .fa_#{$item}
+    order: $item
+
+.fa_43
+  order: 3
+  @media (max-width: 900px)
+    order: 4
+
+.fa_34
+  order: 4
+  @media (max-width: 900px)
+    order: 3
+
+
+$pregnant: [1, 2, 3, 6]
+@each $item in $pregnant
+  .pr_#{$item}
+    order: $item
+
+.pr_45
+  order: 4
+  @media (max-width: 900px)
+    order: 5
+
+.pr_54
+  order: 5
+  @media (max-width: 900px)
+    order: 4
+
 
 .gradient_style_1
   background: #12c2e9;  /* fallback for old browsers */
@@ -338,11 +372,6 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
   background: #56CCF2 /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2) /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2F80ED, #56CCF2) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-// .gradient_style_4
-//   background: #4776E6 /* fallback for old browsers */
-//   background: -webkit-linear-gradient(to right, #8E54E9, #4776E6) /* Chrome 10-25, Safari 5.1-6 */
-//   background: linear-gradient(to right, #8E54E9, #4776E6) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 .gradient_style_4
   background: #FF416C /* fallback for old browsers */
