@@ -281,7 +281,7 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
   margin-top: 2rem
 
 
-$personal: [1, 2, 5, 6, 7, 8, 11]
+$personal: [1, 2, 5, 6, 7, 8, 11, 12, 13]
 @each $item in $personal
   .pe_#{$item}
     order: $item
@@ -321,20 +321,20 @@ $model_tests: [3, 4, 5, 6]
   @media (max-width: 900px)
     order: 1
 
-$family: [1, 2, 5, 6]
+$family: [1, 4, 5, 6, 7]
 @each $item in $family
   .fa_#{$item}
     order: $item
 
-.fa_43
-  order: 3
-  @media (max-width: 900px)
-    order: 4
-
-.fa_34
-  order: 4
+.fa_32
+  order: 2
   @media (max-width: 900px)
     order: 3
+
+.fa_23
+  order: 3
+  @media (max-width: 900px)
+    order: 2
 
 
 $pregnant: [1, 2, 3, 6]
