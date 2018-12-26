@@ -117,7 +117,7 @@ body
   border-radius: .375rem
   @media (min-width: 950px)
     grid-column: span 4
-    min-height: 40vh
+    min-height: 50vh
     background: #92A8A9 url('img/hero.jpg') top left no-repeat
     background-size: cover
     justify-content: flex-end
@@ -190,15 +190,20 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
      break-inside: avoid
      padding: 1rem
      margin-bottom: 1rem
-     background-color: lightgrey
+     background-color: #D0D1D4
      display: inline-block
   &_question
-    border-bottom: 1px solid rgba(255, 255, 255, .2)
+    border-bottom: 1px solid #B9B9BB
     padding-bottom: 1rem
     color: white
   &_answer
     padding: 1rem 0 1rem
     color: black
+    a
+      color: $dark_color
+      &:hover
+        color: $accent_color
+
 
 .shoot
   &_photo
@@ -225,6 +230,10 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
     @media (min-width: 900px)
       grid-column: span 1
       margin-bottom: 2rem
+    a
+      color: $accent_color
+      &:hover
+        color: lighten($accent_color, 15%)
   &_testimonial
     h4
       margin-bottom: 1rem
@@ -351,29 +360,3 @@ $pregnant: [1, 2, 3, 6]
   order: 5
   @media (max-width: 900px)
     order: 4
-
-
-.gradient_style_1
-  background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(45deg, #f64f59, #c471ed, #12c2e9) /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-.gradient_style_2
-  background: #FDC830 /* fallback for old browsers */
-  background: -webkit-linear-gradient(45deg, #F37335, #FDC830) /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #F37335, #FDC830) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-.gradient_style_3
-  background: #11998e /* fallback for old browsers */
-  background: -webkit-linear-gradient(45deg, #38ef7d, #11998e)  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(45deg, #38ef7d, #11998e) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-.gradient_style_5
-  background: #56CCF2 /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2) /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2F80ED, #56CCF2) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-.gradient_style_4
-  background: #FF416C /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C) /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FF4B2B, #FF416C) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
