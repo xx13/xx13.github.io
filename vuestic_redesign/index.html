@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <title>Vuestic Redesign Log</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header Title -->
+    <h1 class="mt-5">Vuestic 2.0 Redesign Notes
+    </h1>
+    <p class="mt-4 text-secondary">
+      Last update: October 23, 2018.
+      <!-- Goals & Challenges -->
+      <h2 class="mt-5">
+        What Is This Page?
+      </h2>
+      <p>The purpose of this document is to pay attention to specific details to be sure they won't be lost when implementing. It's a complimentary guide for Zeplin source files.
+      </p>
+
+      <!-- List of Contents -->
+      <h2 class="mt-5">
+        Completed Changes
+      </h2>
+      <p>
+        <ul class="mb-5">
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#typography">Typography<a /></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#inputs">Inputs</a></li>
+          <li><a href="#dropdown_selects">Dropdown selects</a></li>
+          <li><a href="#checkboxes">Checkboxes, radio buttons</a></li>
+          <li><a href="#tabs">Tabs</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#cards">Cards & widgets</a></li>
+          <li><a href="#modals">Modals</a></li>
+          <li><a href="#icons">Icons</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#notifications">Notifications</a></li>
+          <li class="text-muted">[Upcoming] Progress Bars</li>
+          <li class="text-muted">[Upcoming] Tree view</li>
+          <li class="text-muted">[Upcoming] Date pickers</li>
+          <li class="text-muted">[Upcoming] Color pickers</li>
+          <li class="text-muted">[Upcoming] Accordeon</li>
+          <li class="text-muted">[Upcoming] Timeline</li>
+          <li class="text-muted">[Upcoming] File uploaders</li>
+          <li class="text-muted">[Upcoming] Tags</li>
+          <li class="text-muted">[Upcoming] Wizard</li>
+        </ul>
+      </p>
+      <hr>
+
+      <!-- Colors -->
+      <section id="colors">
+        <h3>
+          Colors
+        </h3>
+        <p>
+          <img src="./img/colors_main.png" class="img-fluid d-block mb-2" alt="Colors">
+          Main colors are applied to texts, labels, secondary buttons, graphs, icons. The default 'black' text color is #34495E, but not #000.
+        </p>
+        <p>
+          <img src="./img/colors_light.png" class="img-fluid d-block mb-2" alt="Light colors">
+          Light colors can't be calculated using lighten function, as they all have different shifts in hue and saturation. So it makes sense to set them apart from main 6 colors.<br> They are used as background colors for notifications, table
+          cells, text buttons. Dividers are light grey.
+        </p>
+        <p>
+          <img src="./img/colors_pale.png" class="img-fluid d-block mb-2" alt="Pale color">
+          There is an extra Pale color that is a default color for even rows in tables.
+        </p>
+        <p>
+          <img src="./img/colors_gradients.png" class="img-fluid d-block mb-2" alt="Main gradients">
+          Buttons have 6 gradients based on main colors.
+        </p>
+        <p>
+          <img src="./img/colors_modulation.png" class="img-fluid d-block mb-2" alt="Color modulation">
+          On hover we apply lighten 15%, on pressed — darken 15% for every element(solid color or gradient). The only differene is text buttons.
+        </p>
+        <p>
+          <img src="./img/colors_text_button_hover.png" class="img-fluid d-block" alt="Text buttons styles">
+          Text buttons have one of the light colors on hover, and 15% of the main color extra as an overlay for pressed state.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Typography -->
+      <section id="typography">
+        <h3>
+          Typography
+        </h3>
+        <p>
+          The amount of text font styles was drastically reduced, font weights were limited to 400 regular and 700 bold.
+          <ul>
+            <li>Regular 16/24 and 14/20 are used for plain texts, inputs, dropdowns, links, etc.</li>
+            <li>Buttons and tabs share bold text style.</li>
+            <li>Labels, table headings, section titles, widget &amp; card titles share the same text style.</li>
+            <li>'Source Code Pro' font family for code snippets.</li>
+            <li>H1—H6 styles were updated as well. Please pay attention to margins.</li>
+          </ul>
+          <img src="./img/heading_margins.png" class="img-fluid" alt="Heading margins">
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Buttons  -->
+      <section class="mt-5" id="buttons">
+        <h3>
+          Buttons
+        </h3>
+        <p>
+          <img src="./img/button_label_alignment.png" class="img-fluid d-block mb-3" alt="Button label vertical alignment">
+          Labels in large and default buttons are shifted torwards top. Small button labels are vertically centered. <span class="text-danger">The only difference — small secondary button.</span>
+        </p>
+        <p>
+          <img src="./img/button_icon_alignment.png" class="img-fluid d-block mb-3" alt="Button icon alignment">
+          Right icon's (dropdown arrow) padding differs from the left side icon's one.
+        </p>
+        <p>
+          <img src="./img/button_group_alignment.png" class="img-fluid d-block mb-3" alt="Button group alignment">
+          Far left and right paddings are larger than the others.
+        </p>
+        <p>
+          <img src="./img/button_text.png" class="img-fluid d-block mb-3" alt="Text buttons">
+          Text button hover style differs from links behavior. Pressed button background will add extra 15% of the original color to its current background color value (e.g. 15% opacity Green overlay to a Light Green background for a Green text
+          button).
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Inputs  -->
+      <section id="inputs">
+        <h3>
+          Inputs
+        </h3>
+        <p>
+          <img src="./img/input_paddings.png" class="img-fluid d-block mb-3" alt="Input paddings">
+          Placeholder position is slightly shifted torwards top border and is not vertically centered.
+        </p>
+        <p>
+          <img src="./img/input_label.png" class="img-fluid d-block mb-3" alt="Input label">
+          We should consider an alernative filled input layout — without a label and a value not changing its position (ex placeholder). It should be a default layout for Search.
+        </p>
+        <p>
+          <img src="./img/input_label_style.png" class="img-fluid d-block mb-3" alt="Input label style">
+          Input labels share the same style as widget titles, table headings, sections titles and labels.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Dropdown Selects  -->
+      <section id="dropdown_selects">
+        <h3>
+          Dropdown Selects
+        </h3>
+        <p>
+          <img src="./img/dropdown_simple.png" class="img-fluid d-block mb-3" alt="Simple dropdown">
+          Selected item is green, so is the hover style of an element. There are no checks on the right for a single choice dropdowns.
+        </p>
+        <p>
+          <img src="./img/dropdown_multiple.png" class="img-fluid d-block mb-3" alt="Multiple choice dropdown">
+          Selected items on a multiple choice dropdown have checks on the right. We might offer 2 types of displaying values: '# selected' or list picked items separated with commas.
+        </p>
+        <p>
+          <img src="./img/dropdown_icons.png" class="img-fluid d-block mb-3" alt="Dropdown icons">
+          Select option might have an icon. By default it's blue, on mouse over and when selected they turn green.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Checkboxes  -->
+      <section id="checkboxes">
+        <h3>
+          Checkboxes, Radio Buttons
+        </h3>
+        <p>
+          <img src="./img/checkbox_basic.png" class="img-fluid d-block mb-3" alt="Basic checkboxes and radio buttons">
+          Checkboxes have rounded corners.
+        </p>
+        <p>
+          <img src="./img/checkbox_label.png" class="img-fluid d-block mb-3" alt="Checkbox label">
+          There are 2 options for inline selects: with and without a label.
+        </p>
+        <p>
+          <img src="./img/checkbox_label_alignment.png" class="img-fluid d-block mb-3" alt="Inline select alignment">
+          We should keep that in mind when building actions &amp; settings blocks like the ones for tables.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Tabs  -->
+      <section id="tabs">
+        <h3>
+          Tabs
+        </h3>
+        <p>
+          <img src="./img/tabs.png" class="img-fluid d-block mb-3" alt="Tabs">
+          Tabs are used to split large chunks of data/content into several simple screens. It works perfectly for forms. Tabs are centered with 40px margins between them. It's a bold text style with main black color for active and hover state, grey
+          for inactive.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Forms  -->
+      <section id="forms">
+        <h3>
+          Forms
+        </h3>
+        <p>
+          <img src="./img/form_full_width.png" class="img-fluid d-block mb-3" alt="Full width form">
+          There are 3 main layouts for forms. The first on is the full width layout. Inputs take the entire space except for 24px margins on the sides.
+        </p>
+        <p>
+          <img src="./img/form_centered.png" class="img-fluid d-block mb-3" alt="Centered form">
+          For fewer inputs and large modal/widgets, we can offer a centered layout. In this case we can setup a min-width around 400px and center the form horizontally.
+        </p>
+        <p>
+          <img src="./img/form_two_columns.png" class="img-fluid d-block mb-3" alt="Two columns form">
+          For larger amount of inputs we can offer a 2 columns form layout.
+        </p>
+        <p>
+          <img src="./img/form_groups.png" class="img-fluid d-block mb-3" alt="Form groups">
+          Form groups is the other way to organize form elements.
+        </p>
+        <p>
+          <img src="./img/form_complex.png" class="img-fluid d-block mb-3" alt="Complex form">
+          Complex form may combine several solutions.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Cards & Widgets  -->
+      <section id="cards">
+        <h3>
+          Cards &amp; Widgets
+        </h3>
+        <p>
+          Cards &amp; widgets have much in common so we'll treat everything as <b>cards</b>. Though widgets are more about page structure, and cards are about content presentation.
+        </p>
+        <p>
+          <img src="./img/card_structure.png" class="img-fluid d-block mb-3" alt="Card with actions">
+          Cards share the same paddings and header structure.
+        </p>
+        <p>
+          <img src="./img/card_header.png" class="img-fluid d-block mb-3" alt="Card with actions">
+          A card <b>might</b> have a header which <b>might</b> contain an action/actions in the upper right corner as icon/text button/button mini. Header height is 48px.
+        </p>
+        <p>
+          <img src="./img/card_colors.png" class="img-fluid d-block mb-3" alt="Colorful card headers">
+          Cards might have different header styles. The default one is a blue label without any decorations. Offering several alternative solutions might be a useful feature. Green style has a blue label.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Modals  -->
+      <section id="modals">
+        <h3>
+          Modals
+        </h3>
+        <p>
+          <img src="./img/modal_centered.png" class="img-fluid d-block mb-3" alt="Modal with centered actions">
+          Modals have rounded corners and 60% black overlay as a background. We can offer several options for actions. Centered actions with a primary choice as a primary button and a secondary choice as a text button for Yes/No dialogs.
+        </p>
+        <p>
+          <img src="./img/modal_sides.png" class="img-fluid d-block mb-3" alt="Modal with actions on the sides">
+          The other layout is with actions aligned to the different sides of the form. This works well for Next/Previous forms and any kind of wizards.
+        </p>
+        <p>
+          <img src="./img/modal_close.png" class="img-fluid d-block mb-3" alt="Modal with close icon">
+          Modals <b>might</b> have an action as a button/icon in the upper right corner. Anyways the modal should be closed by clicking anywhere outside it.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+
+      <!-- Icons  -->
+      <section id="icons">
+        <h3>
+          Icons
+        </h3>
+        <p>
+          <img src="./img/icons.png" class="img-fluid d-block mb-3" alt="Custom icons">
+          There are few custom icons that are widely used through the theme. Vuestic 2.0 will be based on Material Outlined icons to offer a wide range of customization to users.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+
+      <!-- Tables  -->
+      <section id="tables">
+        <h3>
+          Tables
+        </h3>
+        <p>
+          <img src="./img/table_labels.png" class="img-fluid d-block mb-3" alt="Table labels">
+          Table might have 2 types of labels: colorful circles on text labels. Rows/cells might have colorful backgrounds.
+        </p>
+        <p>
+          <img src="./img/table_actions.png" class="img-fluid d-block mb-3" alt="Table actions">
+          Inline actions might be links or buttons. They might be display permanently or shown on mouse over event.
+        </p>
+        <p>
+          <img src="./img/table_headings.png" class="img-fluid d-block mb-3" alt="Table headings">
+          Table headings share the same style as input labels, card titles, etc. They are green if the column is sortable, in other case the label has a default black color.
+        </p>
+        <p>
+          <img src="./img/table_navigation.png" class="img-fluid d-block mb-3" alt="Table pagination">
+          We can offer different types of navigation: pagination / with controls / with current page input, infinite loader, button 'Show more'.
+        </p>
+        <p>
+          <img src="./img/table_change_column_width.png" class="img-fluid d-block mb-3" alt="Chane column width">
+          Here is the way we can offer users to change column width manually by draggin the pins.
+        </p>
+        <p>
+          <img src="./img/table_empty.png" class="img-fluid d-block mb-3" alt="Empty table">
+          Let's take care of situation, if there is no data to display. The message will be vertically centered inside the table, bottom margin not ignored.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Notifications  -->
+      <section id="notifications">
+        <h3>
+          Notifications
+        </h3>
+        <p>
+          <img src="./img/notifications.png" class="img-fluid d-block mb-3" alt="Notifications">
+          Notifications and buttons have <b>different</b> shadows. Notifications have light colors as background. Labels for notifications are the same as used in tables.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <script src="./main.js"></script>
+</body>
+
+</html>
