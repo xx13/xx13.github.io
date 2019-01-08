@@ -17,7 +17,7 @@
     <h1 class="mt-5">Vuestic 2.0 Redesign Notes
     </h1>
     <p class="mt-4 text-secondary">
-      Last update: January 4, 2019.
+      Last update: January 8, 2019.
       <!-- Goals & Challenges -->
       <h2 class="mt-5">
         What Is This Page?
@@ -54,8 +54,7 @@
           <li><a href="#file_uploaders">File uploaders</a></li>
           <li><a href="#tags">Tags</a></li>
           <li><a href="#progress_bars">Progress Bars</a></li>
-          <li class="text-muted">[Upcoming] Sliders</li>
-          <li class="text-muted">[Upcoming] Range</li>
+          <li><a href="#sliders_ranges">Sliders &amp; Ranges</a></li>
           <li class="text-muted">[Upcoming] Ratings</li>
           <li class="text-muted">[Upcoming] Wizard</li>
         </ul>
@@ -530,6 +529,34 @@
         <p>
           <img src="./img/progress_bars.png" class="img-fluid d-block mb-3" alt="Progress Bars">
           We'll focus on main progress bars. Buffer zone with a lighter background is set to 100% by default. But this can be changed and buffer can be dynamic. Labels have the same style as inputs, card titles, etc.
+        </p>
+
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Sliders & Ranges  -->
+      <section id="sliders_ranges">
+        <h3>
+          Sliders &amp; Ranges
+        </h3>
+        <p>
+          <img src="./img/sliders_ranges.png" class="img-fluid d-block mb-3" alt="Sliders & Ranges">
+          Sliders and ranges have the same style, so all the notes about sliders will be relevant to range pickers.
+        </p>
+        <p>
+          <img src="./img/sliders_v_margins.png" class="img-fluid d-block mb-3" alt="Sliders, Vertical Margins">
+          There are 2 types of label bottom marings: 2 px and 8 px. The smaller margins are used for sliders/ranges with value labels. In all other cases (inputs, icons, no value labels) 8 px margins should be used.
+        </p>
+        <p>
+          <img src="./img/sliders_h_margins.png" class="img-fluid d-block mb-3" alt="Sliders, Horizontal Margins">
+          All horizontal margins are 8 px wide: including the ones for labels, icons, value inputs, etc. Please note that left icons don't have left margins, right icons don't have right margins.
+        </p>
+        <p>
+          <img src="./img/sliders_inline.png" class="img-fluid d-block mb-3" alt="Inline Sliders">
+          There is a small difference between inline layouts with left and right labels. Label on the left has an 8 px margin on the left to match the vertical line for all inputs. But you don't add that margin on the right for right labels.
         </p>
 
         <p>
