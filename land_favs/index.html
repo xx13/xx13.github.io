@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <title>Land, Guides by Faved Ambassadors</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 class="mt-5">Land, Guides by Faved Ambassadors
+    </h1>
+    <p class="mt-4 text-secondary">
+      Last update on January 24, 2019.
+    </p>
+
+    <section>
+      <h2 class="mt-5">
+        Challenge
+      </h2>
+      <p>
+        Improve explore experience for users by incorporating an option to get Guides from their favourite Ambassadors.
+      </p>
+      <hr>
+    </section>
+
+    <section>
+      <h2 class="mt-5">
+        Requirements
+      </h2>
+      <p>
+        <ul>
+          <li>Keep the explore flow solid with all features like search, filters, etc.</li>
+          <li>Explore the way to combine the mechanics of following ambassadors and marking Guides as their favourites.</li>
+          <li>Add highlighted Guides by favourite Ambassadors to Explore screens.</li>
+          <li>Explore Following and Faved Guides mechanics.</li>
+        </ul>
+      </p>
+      <hr>
+    </section>
+
+    <section>
+      <h2 class="mt-5">
+        Research
+      </h2>
+      <p>
+        Let's dig into the current functionality of the app and explore some features. I'll mention the things that the app is missing or things that can be improved.
+      </p>
+      <ul>
+        <li>
+          Current version doesn't have an option to follow a person or see all his Guides except for using a search on Explore tab. <span class="text-danger">TODO: Add a profile screen for AMBs with an option to follow, so users can get the latest Guides by them, see all their Guides, and perform any other actions.</span>
+        </li>
+        <li>
+          When you add/buy a guide, it appears on <b>Following</b> list. We are looking to display Guides by the followed AMBs. Having everything piled up (purchased Guides and the ones you got as a follower) is not the best solution. These groups have different purposes: one is giving you access to something that you purchased/added and the other one helps you to look for something new. <span class="text-danger">TODO: Find a way to display new Guides by followed AMBs and purchased/added Guides. It can be 1) moving 'Following' checkbox to filters and renaming 'Following' tab to 'Added', or 2) adding an extra 'Added' tab. The less tabs we have the better as the screen won't become overcluttered, let's keep that in mind.</span>
+        </li>
+        <li>
+          Search & filters should be applied to the Guides that you get as a follower, so the layout shouldn't have drastic changes.
+        </li>
+        <li>
+          <b>Following an AMB</b> is about <b>getting new Guides</b> from him. But you also mentioned that users should be able to <b>see the highlighted Guides</b> from the AMB they follow.
+          At the same time, <b>adding to Favorites</b> allows you to see a guide by using a quick filter on any Explore screen, literally <b>highlight Guides</b>. <span class="text-danger">We can combine followed Guides with the favs.</span>
+        </li>
+      </ul>
+      </p>
+      <hr>
+    </section>
+
+    <section>
+      <h2 class="mt-5">
+        Solutions
+      </h2>
+      <p>
+        My solution involves an extra screen for AMB's profile and a couple of minor tweaks to other screens. The main thing is about setting up the right transitions/actions.
+      </p>
+      <ul>
+        <li>
+          Adding a profile screen for every users seems to be a reasonable move. That way we can incorporate a wide variety of actions.<br>
+          1.1. Display all AMB's guide.<br>
+          1.2. Provide an option to contact AMB.<br>
+          1.3. Promote or report an AMB.<br>
+          1.4. Consider researching an option to create personal screens for users to track their feedback, contact/report them, etc.
+        </li>
+        <li>
+          Having a 'Heart' icon on the AMB's profile that will work as a 'Follow' action. Faving and accessing faved random guides will work as it is now. <br>
+          2.1. Checking that Fav option will check all his Guides as favourite automatically.<br>
+          2.2. Users can unfav any guide.<br>
+          2.3. When unfaving an AMB, the modal will show up with 2 options: 1) to unfollow AMB and keep all favs; 2) to unfollow and remove all his Guides from the favs.
+        </li>
+        <li>
+          Explore tabs will look like: 'Explore', 'Added', 'My Guides'. So basically we'll rename 'Following' to 'Added'.<br>
+          3.1. By viewing faved Guides users will see all the updated on the go as the guide will be filtered from the newest to the oldest.<br>
+          3.2. We can impelement some sort of notifications to display new faved Guides.<br>
+          3.3. We can implement push notifications to tell users about new releases from their faved AMBs.
+        </li>
+        <li>
+          Bringing the follower feed to live. <br>
+          4.1. Experienced users who have some faved guides (they checked them manually or they appeared on the feed after following/subscribing to an AMB) will see them as their starting screen. Basically it's an Explore screen with a fav heart icon checked. <br>
+          4.2. Experienced users who don't have any faved tours will see the standart Explore screen with 4 blocks or newest guides (see Things to Discuss).
+        </li>
+      </ul>
+      <hr>
+    </section>
+
+    <section style="margin-bottom: 6rem">
+      <h2 class="mt-5">
+        Things To Discuss
+      </h2>
+      <ul>
+        <li>1. What actions/options/elements should the first version of the AMB's include besides Showing all his tours and Follow/Fav option? I assume AMB's profile will look pretty much like a previous version of the explore screen: with a large background image, userpic, and some tours in the lower half of the screen.</li> <br>
+        <li>2. What way can we improve the explore flow. Showing 4 blocks will work great for new users, still experienced users may prefer to see the guides themselves. So we can leave an option to show 4 block as the default Explore screen in their Settings.</li> <br>
+        <li>3. What is the best name for the tab with added and purchsed tours: 'Added', 'Purchased' or something else?</li>
+      </ul>
+    </section>
+</body>
+</html>
