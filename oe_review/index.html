@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <title>OE Web App Review</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 class="mt-5">OE Web App Review
+    </h1>
+    <p class="mt-4 text-grey">
+      Last update on January 25, 2019.
+    </p>
+    <p>
+      This review includes some notes about UI implementation and some thoughts &amp; suggestions about userflows and UX solutions.
+    </p>
+
+    <section>
+      <h2 class="mt-5">
+        Table of Contents
+      </h2>
+      <ul class="text-accent">
+        <li><a href="#login">Login</a></li>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#onboarding">Onboarding</a></li>
+        <li><a href="#browse">Browse Efforts</a></li>
+        <li><a href="#empty">No efforts</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#inline_select">Inline Select</a></li>
+        <li><a href="#profile_margins">Profile Margins</a></li>
+        <li><a href="#testing">Testing</a></li>
+      </ul>
+      <hr>
+    </section>
+
+    <section id="login">
+      <h2 class="mt-5">
+        Login
+      </h2>
+      <p>
+        Showing an <span class="text-grey">'Email'</span> label and an <span class="text-grey">'Email'</span> placeholder is confusing. There are 2 adjustemnts to choose from: 1) remove placeholder completely; 2) change it to <span class="text-grey">'youremail@example.com'</span> or something like that. <br>
+        Placeholder should disappear right when the input is focused.
+      </p>
+      <p>
+        Can we add rounded corners to Google button? Right now it pops out.
+      </p>
+      <p>
+        If social logins are of higher priority, then the corresponding buttons should be the first block users see and the email login should follow up.
+      </p>
+      <p>
+        Card shadow differs from shadows of cards inside the app.
+      </p>
+      <img src="./img/login.png" class="img-fluid d-block mb-3" alt="Login">
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+    <section id="welcome">
+      <h2 class="mt-5">
+        Welcome
+      </h2>
+      <p>
+        Too many cluttered font styles make it hard to get the message.
+      </p>
+      <p>
+        Improve the texts. E.g. <span class="text-grey">'Welcome!'</span> can be changes to the next line <span class="text-grey">'Thank you for joining us!'</span>
+      </p>
+      <p>
+        Information can be presented not as a list rather than 4 blocks with icons, a heading and a useful description. Maybe some links to guide the newcomers.
+      </p>
+      <img src="./img/welcome.png" class="img-fluid d-block mb-3" alt="Welcome">
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+    <section id="onboarding">
+      <h2 class="mt-5">
+        Onboarding
+      </h2>
+      <p>
+        Choosing 4 skills and then picking 4 interests looks like taking another round of picking 4 skills. To fix this we can use different colors for skills/interest like blue/orange. That way you will be sure you're moving forward. Another way is to change label to <span class="text-grey">'Proceed to interest'</span> and then <span class="text-grey">'Proceed'.</span>
+      </p>
+      <p>
+        Labels and inline selects should have the same size as buttons.
+      </p>
+      <p>
+        The other thing to consider is to move picking skills and project types (online/local) from the onboarding stage to filters on Browse screen. Later on this can be swapped back. The reason for that is the absense (minimum quantity) of projects. If we force users to set up filters, they have more chances to see 0 projects that meet their needs and they will leave an empty app. Without these limits they will be able to explore at least something and then set up filters if needed.
+      </p>
+      <p>
+        In a no sidebar view scroll appears though almost the entire screen is empty.
+      </p>
+      <img src="./img/onboarding.png" class="img-fluid d-block mb-3" alt="Onboarding">
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+    <section id="browse">
+      <h2 class="mt-5">
+        Browse Efforts
+      </h2>
+      <p>
+        There shoudn't be a way a user sees nothing in Browse tab with all the filters off.
+      </p>
+      <p>
+        There might be better ways to present efforts: for example, putting cards next to each other to fill the grid instead of the carousel. Table view will be a better option as well though it will lack images.
+      </p>
+      <img src="./img/browse.png" class="img-fluid d-block mb-3" alt="Browse efforts">
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+    <section id="empty">
+      <h2 class="mt-5">
+        No efforts
+      </h2>
+      <p>
+        If there are no efforts added, a user should be guided to <b>Browse</b> tab instead of setting filters through <span class="text-grey">'Find Efforts'.</span>
+      </p>
+      <img src="./img/empty.png" class="img-fluid d-block mb-3" alt="No efforts added">
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+    <section id="effort">
+      <h2 class="mt-5">
+        Effort
+      </h2>
+      <p>
+        The expanded view can be a default one for desktop version as there is plenty of space to use.
+      </p>
+      <p>
+        Font sizes should be larger, right now they are way too small.
+      </p>
+      <p>
+        Time estimate and project type (offline, online) can be grouped with skills. Right now project type is close to be lost.
+      </p>
+      <p>
+        Unnecessary vertical scroll appears on this screen as well.
+      </p>
+      <img src="./img/effort.png" class="img-fluid d-block mb-3" alt="Effort">
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+    <section id="gallery">
+      <h2 class="mt-5">
+        Gallery
+      </h2>
+      <p>
+        Gallery should be fixed. Now when you click an image, it opens in a very special way.
+      </p>
+      <img src="./img/gallery.png" class="img-fluid d-block mb-3" alt="Gallery">
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+    <section id="inline_select">
+      <h2 class="mt-5">
+        Inline Select
+      </h2>
+      <p>
+        This control received a shadow that should be removed.
+      </p>
+      <img src="./img/inline_select.png" class="img-fluid d-block mb-3" alt="Inline select">
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+    <section id="profile_margins">
+      <h2 class="mt-5">
+        Profile Margins
+      </h2>
+      <p>
+        The same content inside different tabs, but when you switch between them you can see the content bouncing.
+      </p>
+      <img src="./img/profile_margins.png" class="img-fluid d-block mb-3" alt="Profile marings">
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+    <section id="testing">
+      <h2 class="mt-5">
+        Testing
+      </h2>
+      <p>
+        I think adding several projects with multiple efforts will be the right way to explore other things in app. Not only to test the correct implementation of UI elements, but also to explore all layouts, transitions to see whether we need to go for some updates. Please let me know if you want me to take part in this testing.
+      </p>
+      <small><a href="#top">Go to top</a></small>
+      <hr>
+    </section>
+
+</body>
+
+</html>
