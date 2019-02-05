@@ -327,9 +327,10 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
 .certificate_bg
   height: 200px
   background: url('./img/bg_certificate_mobile.jpg') center center no-repeat
+  background-size: contain
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
     background: #fff url('./img/bg_certificate_mobile_x2.jpg') center center no-repeat
-  background-size: contain
+    background-size: contain
   margin-bottom: 1.5rem
   @media (min-width: 830px)
     width: 100%
@@ -338,6 +339,7 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
     background-size: contain
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
       background: #fff url('./img/bg_certificate_x2.jpg') center center no-repeat
+      background-size: contain
     margin-bottom: 3rem
 
 .page_title_cert
@@ -423,7 +425,7 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
   padding-left: 15%
   background: url('./img/bg_calculator.jpg') bottom right no-repeat
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
-    background: url('./img/bg_calculator_x2.jpg') top right no-repeat
+    background: url('./img/bg_calculator_x2.jpg') bottom right no-repeat
   @media (min-width: 830px)
     grid-column: span 4
     padding-left: 0
