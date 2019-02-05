@@ -424,14 +424,15 @@ $cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
 .calculator
   grid-column: span 8
   padding-left: 1rem
-  background: url('./img/bg_calculator.jpg') bottom right no-repeat
-  background-size: 170px auto
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
     background: url('./img/bg_calculator_x2.jpg') bottom right no-repeat
     background-size: 170px auto
   @media (min-width: 830px)
     grid-column: span 4
     padding-left: 0
+  @media (min-width: 515px)
+    background: url('./img/bg_calculator.jpg') bottom right no-repeat
+    background-size: 170px auto
 
 
 
