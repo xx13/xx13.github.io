@@ -1,4 +1,4 @@
-let total = 240
+let total = 260
 
 const  el = document.getElementById('calc')
 // Toggle between 2 tabs
@@ -8,7 +8,7 @@ personal.addEventListener('click', function() {
   if (personal.classList.contains('type_unchecked')) {
     personal.classList.toggle('type_checked')
     personal.classList.toggle('type_unchecked')
-    total -= 110
+    total -= 60
     family.classList.remove('type_checked')
     family.classList.add('type_unchecked')
   }
@@ -19,7 +19,7 @@ family.addEventListener('click', function () {
   if (family.classList.contains('type_unchecked')) {
     family.classList.toggle('type_checked')
     family.classList.toggle('type_unchecked')
-    total += 110
+    total += 60
     personal.classList.remove('type_checked')
     personal.classList.add('type_unchecked')
   }
