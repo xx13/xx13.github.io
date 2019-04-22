@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <title>Pleroma, Concept</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header Title -->
+    <h1 class="mt-5">Pleroma, Visual Concept
+    </h1>
+    <p class="mt-4 text-secondary">
+      Last update: April 22, 2019.
+    </p>
+
+
+      <!-- Goals & Challenges -->
+      <h2 class="mt-5">
+        Visual Concept
+      </h2>
+      <p>
+      There are 2 things I kept in mind when designing the visual concept for Pleroma. The first one is sticking to <a href="https://xx13.github.io/plrm/">key decisions</a>, the second one is keeping the new theme related to the current visual style.
+      </p>
+<p>
+  There were some minor changes to the structure as I had more time to work on the details. Navigation at the very top and sub-nav right below it were merged into one section, sorting options for the feed were removed as only 'show latest first' make sense. The other impotant change is adding 'Add New Entry' action available on any screen.
+</p>
+<p>
+  You should refer to the following screens as the general direction for design rather than a polished and finished app screens.
+</p>
+
+      <!-- Explore -->
+      <section class="mt-5">
+        <h3>
+          Explore
+        </h3>
+        <img src="./img/explore_all.png" class="img-fluid mb-4" alt="Explore Feed">
+        <p>
+          Default feed inlcudes all content types that are pre-sorted &mdash; newest first and your feed or public timeline or your server by default (it depends on who are the users, what way we expect them to work with the app). For now I used Public Timeline as default feed so users can Explore things more w/o following/subscribing others.
+        </p>
+        <p>
+          Content type filters are available at the top and will work for User's Feed view as well.
+        </p>
+        <p>
+          Posts/entries/card cover the entire screen and flow covering all available space. Quick actions are available on the go.
+        </p>
+        <p>
+          We might consider adding custom colorful backgrounds but it may result in poor readability as the screen will be filled with screaming colors. The other way to introduce a little contrast is to add branded colroful background for trending / popular / featured posts only.
+        </p>
+        <hr>
+      </section>
+
+      <!-- Explore - Videos -->
+      <section>
+        <h3>
+          Explore — Videos
+        </h3>
+        <img src="./img/explore_videos.png" class="img-fluid mb-4" alt="Explore videos">
+        <p>
+          It's very easy to make the entire platform YouTube-ish by simply applying Videos filter at the very top. Search and feed options will work together with content filters so users can get the content they want.
+        </p>
+        <p>
+          The layout allows to display videos with heading / text / heading + text options. Based on users' feedback it might be a nice touch hide text description (or add 'Hide text' option) so the focus will be entirely on videos.
+        </p>
+        <hr>
+      </section>
+
+      <!-- User's Feed -->
+      <section>
+        <h3>
+          User's Profile
+        </h3>
+        <img src="./img/profile.png" class="img-fluid mb-4" alt="User's profile">
+        <p>
+          The layout and all sorting options are the same as for Explore feed. The only difference is a User's section that contains an overview, bio (optional), acitons (Follow, Report, Block, etc) and visual elements (userpic and custom background).
+        </p>
+        <p>
+          I highligted 'Follow' as the main action. Meanwhile other actions were grouped together and put under 'More' icon. So they are still available but no require too much attention from users.
+        </p>
+        <p>
+          The layout will work for users w/o bio information as well.
+        </p>
+        <hr>
+      </section>
+
+
+</body>
+
+</html>
