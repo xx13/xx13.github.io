@@ -62,6 +62,7 @@
   color: white;
   text-align: center;
   width: 85%;
+  max-width: 720px;
 }
 
 h1 {
